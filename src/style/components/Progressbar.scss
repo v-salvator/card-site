@@ -1,0 +1,21 @@
+.progressbar {
+  width: 100px;
+  height: 20px;
+  background-color: $light-grey;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__progress {
+    width: 50%;
+    background-color: $yellow;
+    height: 100%;
+    // @include debug-border();
+  }
+  &__text {
+    position: absolute;
+    right: 4px;
+    font-weight: bold;
+    font-size: $mid-font;
+  }
+}

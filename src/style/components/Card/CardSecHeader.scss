@@ -1,0 +1,35 @@
+.card-sec-header {
+  // @include debug-border(red);
+  background-color: $dark-grey;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__btn-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    // @include debug-border(green);
+    &__btn {
+      margin: 0 2px;
+      padding: 6px;
+      cursor: pointer;
+      height: 100%;
+      &--select {
+        background-color: white;
+        color: $dark-grey;
+      }
+    }
+  }
+
+  &__hide-btn {
+    // @include debug-border(blue);
+    padding: 6px 8px;
+    border-left: 1px solid $light-grey;
+    cursor: pointer;
+  }
+}

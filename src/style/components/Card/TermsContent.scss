@@ -1,0 +1,60 @@
+.terms-content {
+  // @include debug-border(green);
+  padding: 12px;
+  position: relative;
+  &__title {
+    color: $light-grey;
+    font-weight: bold;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 2px 0;
+  }
+  &__head {
+    // @include debug-border(green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    border-bottom: 5px solid $light-grey;
+    color: $dark-grey;
+    & > * {
+      padding: 0 8px;
+      font-size: $mid-font;
+      flex: 1;
+    }
+
+    & > :nth-child(2) {
+      flex: 2;
+      text-align: center;
+      // @include debug-border(blue);
+    }
+    & > :nth-child(3) {
+      text-align: right;
+    }
+  }
+  &__row {
+    // @include debug-border(green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    & > * {
+      padding: 0 8px;
+      flex: 1;
+    }
+    & > :nth-child(1) {
+      font-weight: bold;
+      // @include debug-border(blue);
+    }
+    & > :nth-child(2) {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & > :nth-child(3) {
+      text-align: right;
+    }
+  }
+}

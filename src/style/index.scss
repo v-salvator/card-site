@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  & * {
+    box-sizing: border-box;
+  }
+}
+
+@import "./globalVars.scss";
+@import "./mixins.scss";
+@import "./components/index.scss";

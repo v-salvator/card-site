@@ -1,0 +1,18 @@
+.card-header {
+  background-color: $light-blue;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__icon {
+    // @include debug-border(green);
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    color: $dark-blue;
+    font-weight: bold;
+  }
+}

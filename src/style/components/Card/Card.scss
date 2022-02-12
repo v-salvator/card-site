@@ -1,0 +1,13 @@
+.card {
+  // @include debug-border();
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $light-grey;
+  &__content {
+    flex: 1;
+    overflow: scroll;
+    // @include debug-border(green);
+  }
+}
